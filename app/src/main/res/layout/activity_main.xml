@@ -8,14 +8,16 @@
     android:layout_weight="2"
     android:orientation="vertical">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_weight="2.22"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
 
-
-
-
+    </com.google.android.material.appbar.AppBarLayout>
 
 
     <LinearLayout
-        android:layout_weight="1"
+        android:layout_weight="1.5"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/black"
@@ -23,7 +25,7 @@
 
         <RelativeLayout
         android:layout_weight="1"
-        android:background="#233D67"
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -34,27 +36,25 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:textColor="@color/black"
                     android:id="@+id/date"
                     android:gravity="center"
                     android:text="23.12.2021"
+                    android:textSize="20sp"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"/>
 
 
                 <TextView
+                    android:textColor="@color/black"
                     android:id="@+id/month"
                     android:gravity="center"
-                    android:text="Decemnder"
+                    android:text="December"
+                    android:textSize="20sp"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"/>
-
-
-
-
-
-
 
 
             </LinearLayout>
@@ -66,7 +66,36 @@
         <RelativeLayout
             android:layout_weight="1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginVertical="15sp"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginVertical="15sp"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginVertical="15sp"/>
+
+
+            </LinearLayout>
 
         </RelativeLayout>
 
@@ -74,24 +103,21 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#7C5050"
-        >
+        android:layout_weight="1"
+        android:background="@color/white">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="15dp">
 
 
-
-
+        </androidx.viewpager2.widget.ViewPager2>
 
 
     </LinearLayout>
-
-
-
-
-
-
 
 
 </LinearLayout>
